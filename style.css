@@ -1,0 +1,92 @@
+body {
+	font-family: 'Arial', sans-serif;
+}
+/*--HEADER */
+.header {
+	color: #fff;
+	
+	text-align: center;
+	background-image: url(img/intro-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto 100%;
+}
+.header .main{
+	padding-top: 180px
+}
+.header .main h1 {
+	padding: 0 50px;
+	margin-bottom: 30px;
+}
+.header h1 {
+	font-size: 48px;
+}
+.header h2 {
+	font-size: 24px;
+	padding: 0 170px;
+	font-weight: normal;
+}
+.header p {
+	font-size: 18px;
+	margin: 0;
+}
+.header .sub {
+	padding: 70px 0 120px;
+}
+.header .sub div{
+	border: 2px #fff solid;
+	margin: 0 25px;
+	padding: 20px 0;
+}
+/*--MENU */
+
+.menu {
+	height: 100px;
+}
+.menu nav ul {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.menu nav ul li {
+	display: inline-block;
+	margin-left: 30px;	
+}
+.menu nav ul li a {
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.menu nav ul li span {
+	color: #f6ae48;
+}
+.menu nav ul li a:hover {
+	color: #f6ae48;
+	transition: .1s linear;
+}
+
+/*--MEDIA */
+
+@media (max-width: 1200px) {
+	.menu .main {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 1000px) {
+	.header .main h1{
+		padding: 0;
+	}
+	.header h2 {
+		padding: 0;
+	}
+}
+
+@media (max-width: 770px) {
+	.header .sub div{
+		margin-bottom: 35px;
+	}
+}
