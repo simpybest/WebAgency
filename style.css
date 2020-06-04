@@ -40,6 +40,7 @@ body {
 }
 
 /*--MENU */
+
 .menu {
   height: 100px;
 }
@@ -68,7 +69,6 @@ body {
 }
 
 /*--STUDIO */
-
 .studio {
   color: #000;
   height: 1100px;
@@ -114,6 +114,78 @@ body {
   padding: 0;
 }
 
+/*--DEVELOPMENT */
+.development {
+  color: #fff;
+  text-align: center;
+  background-image: url(img/development-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.development h1 {
+  font-size: 48px;
+}
+.development h2 {
+  font-size: 24px;
+  padding: 0 170px;
+  font-weight: normal;
+}
+.development .bg {
+  top: -140px;
+  left: -194px;
+  position: relative;
+  width: 666px;
+  height: 527px;
+  background-image: url(img/development-bg-0.jpg);
+}
+.development .main {
+  padding-top: 180px;
+  padding-bottom: 220px;
+}
+.development .main h1 {
+  padding: 0 50px;
+  margin-bottom: 30px;
+}
+.development .sub {
+  top: -300px;
+  position: relative;
+  padding: 0 0 120px;
+}
+.development .sub .page {
+  text-align: left;
+  margin: 0 10px;
+  padding: 50px 30px 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.development .sub .page h1 {
+  padding-bottom: 40px;
+}
+.development .sub .page button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  padding: 5px 15px;
+}
+.development .sub .page.one {
+  background-image: url(img/development-sub-1.jpg);
+}
+.development .sub .page.one button {
+  border: 2px #00b9e7 solid;
+}
+.development .sub .page.two {
+  background-image: url(img/development-sub-2.jpg);
+}
+.development .sub .page.two button {
+  border: 2px #ffcb00 solid;
+}
+.development .sub .page.three {
+  background-image: url(img/development-sub-3.jpg);
+}
+.development .sub .page.three button {
+  border: 2px #66bf0d solid;
+}
+
 /*--MEDIA */
 @media (max-width: 1200px) {
   .menu .main {
@@ -129,9 +201,29 @@ body {
   .header h2 {
     padding: 0;
   }
+
+  .development {
+    margin-top: 200px;
+  }
+  .development .main {
+    padding-top: 80px;
+  }
+  .development h2 {
+    padding: 0;
+  }
+  .development h1 {
+    padding: 0;
+  }
+  .development .sub .page {
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 770px) {
   .header .sub div {
     margin-bottom: 35px;
+  }
+
+  .development {
+    margin-top: 500px;
   }
 }

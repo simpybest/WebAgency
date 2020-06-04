@@ -1,6 +1,6 @@
 body { font-family: 'Arial', sans-serif; }
 
-/* HEADER */
+/*--HEADER */
 .header {
 	color: #fff;
 	text-align: center;
@@ -36,8 +36,8 @@ body { font-family: 'Arial', sans-serif; }
 		}
 	}
 }
-/*--MENU */
 
+/*--MENU */
 .menu {
 	height: 100px;
 
@@ -67,6 +67,7 @@ body { font-family: 'Arial', sans-serif; }
 }
 
 /*--STUDIO */
+
 .studio {
 	color: #000;
 	height: 1100px;
@@ -112,6 +113,78 @@ body { font-family: 'Arial', sans-serif; }
 	}
 }
 
+/*--DEVELOPMENT */
+.development {
+	color: #fff;
+	text-align: center;
+	background-image: url(img/development-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	h1 {
+		font-size: 48px;
+	}
+	 h2 {
+		font-size: 24px;
+		padding: 0 170px;
+		font-weight: normal;
+	}
+	.bg {
+	top: -140px;
+	left: -194px;
+	position: relative;
+	width: 666px;
+	height: 527px;
+	background-image: url(img/development-bg-0.jpg);
+	}
+	.main { 
+		padding-top: 180px;
+		padding-bottom: 220px;
+		h1 {
+			padding: 0 50px;
+			margin-bottom: 30px;
+		}
+	}
+	.sub {
+		top: -300px;
+		position: relative;
+		padding: 0 0 120px;
+		.page {
+			h1 {
+				padding-bottom: 40px;
+			}
+			text-align: left;
+			margin: 0 10px;
+			padding: 50px 30px 20px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% 100%;
+			button {
+				background-color: rgba(0, 0 ,0, 0);
+				color: #fff;
+				padding: 5px 15px;
+			}
+			&.one {
+				background-image: url(img/development-sub-1.jpg);
+				button {
+					border: 2px #00b9e7 solid;
+				}
+			}
+			&.two {
+				background-image: url(img/development-sub-2.jpg);
+				button {
+					border: 2px #ffcb00 solid;
+				}
+			}
+			&.three {
+				background-image: url(img/development-sub-3.jpg);
+				button {
+					border: 2px #66bf0d solid;
+				}
+			}
+		}
+
+	}
+}
 /*--MEDIA */
 @media (max-width: 1200px) {
 	.menu .main {
@@ -127,10 +200,32 @@ body { font-family: 'Arial', sans-serif; }
 	.header h2 {
 		padding: 0;
 	}
+	.development {
+		.main {
+			padding-top: 80px;
+		}
+		margin-top: 200px;
+		h2 {
+			padding: 0;
+		}
+		h1 {
+			padding: 0;
+		}
+		.sub {
+			.page {
+				margin-bottom: 40px;
+			}
+		}
+	}
+
 }
 
 @media (max-width: 770px) {
 	.header .sub div{
 		margin-bottom: 35px;
 	}
+	.development {
+		margin-top: 500px;
+	}
+
 }
