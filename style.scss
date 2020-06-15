@@ -1,4 +1,5 @@
-body { font-family: 'Arial', sans-serif; }
+body { font-family: 'Arial', sans-serif; h1 { font-weight: 900; }}
+
 
 /*--HEADER */
 .header {
@@ -37,6 +38,7 @@ body { font-family: 'Arial', sans-serif; }
 	}
 }
 
+
 /*--MENU */
 .menu {
 	height: 100px;
@@ -66,8 +68,11 @@ body { font-family: 'Arial', sans-serif; }
 	}
 }
 
-/*--STUDIO */
 
+
+
+
+/*--STUDIO */
 .studio {
 	color: #000;
 	height: 1100px;
@@ -145,11 +150,11 @@ body { font-family: 'Arial', sans-serif; }
 		}
 	}
 	.sub {
-		top: -300px;
+		top: -350px;
 		position: relative;
-		padding: 0 0 120px;
 		.page {
 			h1 {
+				font-weight: 700;
 				padding-bottom: 40px;
 			}
 			text-align: left;
@@ -185,7 +190,195 @@ body { font-family: 'Arial', sans-serif; }
 
 	}
 }
+
+/*--SEARCH */
+.search {
+	.row {
+		background-image: url(img/search-bg.png);
+		background-repeat: no-repeat;
+		background-position: 5% 20%;
+	}
+	p {
+		padding-top: 25px;
+		font-size: 24px;
+	}
+	img {
+		margin-bottom: 25px;
+	}
+	padding-bottom: 100px;
+}
+/*--PORTFOLIO */
+
+.portfolio {
+
+	.row {
+		text-align: center;
+		color: #fff;
+
+		background-color: #303263;
+	}
+	.top {
+		height: 110px;
+		background-image: url(img/portfolio-bg.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 60%;
+	}
+	.bottom {
+		height: 100px;
+		button {
+			border: none;
+			padding: 10px 20px;
+			h1 { font-size: 24px; margin: 0; }
+			color: #fff;
+			background-color: #6a6b8e;
+			border-radius: 10px;
+		}
+	}
+}
+/*--ADAPTABILITY */
+.adaptability {
+	.row {
+		background-image: url(img/adaptability-bg-2.png);
+		background-repeat: no-repeat;
+	}
+	p {
+		padding-top: 25px;
+		font-size: 24px;
+	}
+	img {
+		margin-bottom: 25px;
+	}
+	padding: 170px 0;
+}
+/*--TRADE-IN */
+.trade-in {
+	color: #fff;
+	text-align: left;
+	background-image: url(img/trade-in-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	h1 {
+		font-size: 48px;
+	}
+	h2 {
+		font-size: 24px;
+		font-weight: 900;
+	}
+	p {
+		font-size: 18px;
+		margin: 0;
+		padding-top: 20px;
+		padding-right: 25px;
+	}
+	.main { 
+		text-align: center;
+		padding-top: 75px;
+		h1 {
+			padding: 0 50px;
+			margin-bottom: 30px;
+		}
+	}
+	.sub {
+		img {
+			padding-right: 5px;
+		}
+	}
+	.bottom {
+		text-align: center;
+		height: 100px;
+		button {
+			border: none;
+			padding: 10px 20px;
+			h1 { font-size: 24px; margin: 0; }
+			color: #fff;
+			background-color: #f6ae48;
+			border-radius: 10px;
+		}
+	}
+}
+/*--CARE */
+.care {
+	.row {
+		background-image: url(img/care-bg-2.png);
+		background-repeat: no-repeat;
+	}
+	p {
+		padding-top: 25px;
+		font-size: 24px;
+	}
+	img {
+		margin-bottom: 25px;
+	}
+	padding: 170px 0;
+}
+/*--FOOTER */
+
+.footer {
+	color: #fff;
+	text-align: left;
+	background-image: url(img/footer-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	.main {
+		padding: 120px 0 300px;
+		h1 {
+			font-size: 30px;
+			padding-bottom: 40px;
+		}
+		p {
+			font-size: 18px;
+			padding-right: 125px;
+		}
+		input[type=text] {
+		  color: #fff;
+		  width: 310px;
+		  height: 45px;
+		  padding: 10px 15px;
+		  border: 4px solid #fff;
+		  background-color: rgba(0, 0 ,0, 0);
+		}
+		input::placeholder {
+		  	color: #fff;
+		}
+		input[type=text]:focus {
+			outline: none;
+		}
+		input[id=e-mail] {
+			width: 614px;
+		}
+		input[id=name] {
+			width: 305px;
+		}
+		textarea {
+			color: #fff;
+			resize: none;
+		    padding: 10px 15px;
+		    border: 4px solid #fff;
+		    background-color: rgba(0, 0 ,0, 0);
+			width: 614px;
+			height: 165px;
+		}
+		textarea:focus {
+			outline: none;
+		}
+		button {
+			  background-color: #f6ae48;
+			  font-weight: 900;
+			  color: white;
+			  padding: 15px 30px;
+			  border: none;
+			  border-radius: 10px;
+			  cursor: pointer;
+			}
+
+		button:hover {
+		  background-color: #d3943c;
+		}
+	}
+}
 /*--MEDIA */
+
 @media (max-width: 1200px) {
 	.menu .main {
 		flex: 0 0 100%;
@@ -217,6 +410,12 @@ body { font-family: 'Arial', sans-serif; }
 			}
 		}
 	}
+	.trade-in {
+		background-size: auto 100%;
+	 	.main { 
+			padding-top: 175px;
+		}
+	}
 
 }
 
@@ -226,6 +425,16 @@ body { font-family: 'Arial', sans-serif; }
 	}
 	.development {
 		margin-top: 500px;
+	}
+	.footer {
+		.main {
+			p {
+				padding: 0;
+			}
+		textarea {
+			height: 65px;
+		}
+		}
 	}
 
 }

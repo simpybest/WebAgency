@@ -1,7 +1,9 @@
 body {
   font-family: "Arial", sans-serif;
 }
-
+body h1 {
+  font-weight: 900;
+}
 /*--HEADER */
 .header {
   color: #fff;
@@ -40,7 +42,6 @@ body {
 }
 
 /*--MENU */
-
 .menu {
   height: 100px;
 }
@@ -69,6 +70,7 @@ body {
 }
 
 /*--STUDIO */
+
 .studio {
   color: #000;
   height: 1100px;
@@ -115,6 +117,7 @@ body {
 }
 
 /*--DEVELOPMENT */
+
 .development {
   color: #fff;
   text-align: center;
@@ -147,9 +150,8 @@ body {
   margin-bottom: 30px;
 }
 .development .sub {
-  top: -300px;
+  top: -350px;
   position: relative;
-  padding: 0 0 120px;
 }
 .development .sub .page {
   text-align: left;
@@ -160,6 +162,7 @@ body {
   background-size: 100% 100%;
 }
 .development .sub .page h1 {
+  font-weight: 700;
   padding-bottom: 40px;
 }
 .development .sub .page button {
@@ -186,7 +189,204 @@ body {
   border: 2px #66bf0d solid;
 }
 
+/*--SEARCH */
+
+.search {
+  padding-bottom: 100px;
+}
+.search .row {
+  background-image: url(img/search-bg.png);
+  background-repeat: no-repeat;
+  background-position: 5% 20%;
+}
+.search p {
+  padding-top: 25px;
+  font-size: 24px;
+}
+.search img {
+  margin-bottom: 25px;
+}
+/*--PORTFOLIO */
+
+.portfolio .row {
+  text-align: center;
+  color: #fff;
+  background-color: #303263;
+}
+.portfolio .top {
+  height: 110px;
+  background-image: url(img/portfolio-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+}
+.portfolio .bottom {
+  height: 100px;
+}
+.portfolio .bottom button {
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #6a6b8e;
+  border-radius: 10px;
+}
+.portfolio .bottom button h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/*--ADAPTABILITY */
+
+.adaptability {
+  padding: 170px 0;
+}
+.adaptability .row {
+  background-image: url(img/adaptability-bg-2.png);
+  background-repeat: no-repeat;
+}
+.adaptability p {
+  padding-top: 25px;
+  font-size: 24px;
+}
+.adaptability img {
+  margin-bottom: 25px;
+}
+
+/*--TRADE-IN */
+
+.trade-in {
+  color: #fff;
+  text-align: left;
+  background-image: url(img/trade-in-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.trade-in h1 {
+  font-size: 48px;
+}
+.trade-in h2 {
+  font-size: 24px;
+  font-weight: 900;
+}
+.trade-in p {
+  font-size: 18px;
+  margin: 0;
+  padding-top: 20px;
+  padding-right: 25px;
+}
+.trade-in .main {
+  text-align: center;
+  padding-top: 75px;
+}
+.trade-in .main h1 {
+  padding: 0 50px;
+  margin-bottom: 30px;
+}
+.trade-in .sub img {
+  padding-right: 5px;
+}
+.trade-in .bottom {
+  text-align: center;
+  height: 100px;
+}
+.trade-in .bottom button {
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #f6ae48;
+  border-radius: 10px;
+}
+.trade-in .bottom button h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/*--CARE */
+.care {
+  padding: 170px 0;
+}
+.care .row {
+  background-image: url(img/care-bg-2.png);
+  background-repeat: no-repeat;
+}
+.care p {
+  padding-top: 25px;
+  font-size: 24px;
+}
+.care img {
+  margin-bottom: 25px;
+}
+
+/*--FOOTER */
+
+.footer {
+  color: #fff;
+  text-align: left;
+  background-image: url(img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.footer .main {
+  padding: 120px 0 300px;
+}
+.footer .main h1 {
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+.footer .main p {
+  font-size: 18px;
+  padding-right: 125px;
+}
+.footer .main input[type=text] {
+  color: #fff;
+  width: 310px;
+  height: 45px;
+  padding: 10px 15px;
+  border: 4px solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+}
+.footer .main input::-ms-input-placeholder {
+  color: #fff;
+}
+.footer .main input::placeholder {
+  color: #fff;
+}
+.footer .main input[type=text]:focus {
+  outline: none;
+}
+.footer .main input[id=e-mail] {
+  width: 614px;
+}
+.footer .main input[id=name] {
+  width: 305px;
+}
+.footer .main textarea {
+  color: #fff;
+  resize: none;
+  padding: 10px 15px;
+  border: 4px solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+  width: 614px;
+  height: 165px;
+}
+.footer .main textarea:focus {
+  outline: none;
+}
+.footer .main button {
+  background-color: #f6ae48;
+  font-weight: 900;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.footer .main button:hover {
+  background-color: #d3943c;
+}
+
 /*--MEDIA */
+
 @media (max-width: 1200px) {
   .menu .main {
     flex: 0 0 100%;
@@ -217,6 +417,13 @@ body {
   .development .sub .page {
     margin-bottom: 40px;
   }
+
+  .trade-in {
+    background-size: auto 100%;
+  }
+  .trade-in .main {
+    padding-top: 175px;
+  }
 }
 @media (max-width: 770px) {
   .header .sub div {
@@ -225,5 +432,12 @@ body {
 
   .development {
     margin-top: 500px;
+  }
+
+  .footer .main p {
+    padding: 0;
+  }
+  .footer .main textarea {
+    height: 65px;
   }
 }
